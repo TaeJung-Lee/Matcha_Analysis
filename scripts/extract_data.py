@@ -3,7 +3,7 @@ import re
 import pandas as pd
 import os
 
-print("Starting PDF extraction...")
+print("Starting updated PDF extraction...")
 
 # --- Setup ---
 pdf_folder = os.path.join("..", "data", "raw_pdfs")
@@ -33,10 +33,12 @@ for filename in os.listdir(pdf_folder):
         "operating_farmers": None,
         "total_aracha_tons": None,
         "tencha_tons": None,
-        "autumn_tencha_tons": None,
+        "autumn_tencha_tons": 0.0,
+        "total_tencha_tons": None,
         "total_aracha_yen_m": None,
         "tencha_yen_m": None,
-        "autumn_tencha_yen_m": None,
+        "autumn_tencha_yen_m": 0.0,
+        "total_tencha_yen_m": None
     }
 
     try:
@@ -44,7 +46,6 @@ for filename in os.listdir(pdf_folder):
             for page in pdf.pages:
                 text = page.extract_text()
 
-                # Tea field sizes
                 match_total_field = re.search(r"\n茶\s*園\s*面\s*積\s+([\d,]+\.\d+)", text)
                 if match_total_field:
                     row["total_field_ha"] = float(match_total_field.group(1).replace(",", ""))
@@ -53,7 +54,6 @@ for filename in os.listdir(pdf_folder):
                 if match_tencha_field:
                     row["tencha_field_ha"] = float(match_tencha_field.group(1).replace(",", ""))
 
-                # Farmers
                 match_cultivated = re.search(r"栽\s*培\s*農\s*家\s*数\s*(\d+)", text)
                 if match_cultivated:
                     row["cultivated_farmers"] = int(match_cultivated.group(1))
@@ -62,7 +62,6 @@ for filename in os.listdir(pdf_folder):
                 if match_operating:
                     row["operating_farmers"] = int(match_operating.group(1))
 
-                # Production (tons)
                 match_total_aracha = re.search(r"荒\s*茶\s*生\s*産\s*量\s*([\d,]+\.\d+)", text)
                 if match_total_aracha:
                     row["total_aracha_tons"] = float(match_total_aracha.group(1).replace(",", ""))
@@ -74,9 +73,6 @@ for filename in os.listdir(pdf_folder):
                 match_autumn_tencha = re.search(r"秋\s*て\s*ん\s*茶\s*\*1\s*([\d,]+\.\d+)", text)
                 if match_autumn_tencha:
                     row["autumn_tencha_tons"] = float(match_autumn_tencha.group(1).replace(",", ""))
-
-                # Revenue (millions of yen)
-                # Add " * 1_000_000 " if needed
 
                 match_aracha_yen = re.search(r"荒\s*茶\s*生\s*産\s*金\s*額\s*([\d,]+\.\d+)", text)
                 if match_aracha_yen:
@@ -90,8 +86,9 @@ for filename in os.listdir(pdf_folder):
                 if match_autumn_tencha_yen:
                     row["autumn_tencha_yen_m"] = float(match_autumn_tencha_yen.group(1).replace(",", ""))
 
-                if all(v is not None for v in row.values() if v != "year"):
-                    break
+        # --- Post-processing calculations ---
+        row["total_tencha_tons"] = (row["tencha_tons"] or 0) + (row["autumn_tencha_tons"] or 0)
+        row["total_tencha_yen_m"] = (row["tencha_yen_m"] or 0) + (row["autumn_tencha_yen_m"] or 0)
 
         all_data.append(row)
 
