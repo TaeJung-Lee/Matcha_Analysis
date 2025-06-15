@@ -1,0 +1,361 @@
+Aracha = crude steamed tea leaves including stems/veins (bulk material)
+
+Tencha = refined, stem/vein removed, dried flat leaves from aracha specifically grown for matcha
+
+Matcha = powdered tea ground from tencha leaves
+
+Harvested tea leaves → steaming → aracha (rough steamed leaves) → de-stemming/de-veining + drying flat → tencha → grinding → matcha powder
+
+
+1. Aracha (粗茶)
+Meaning: Literally "rough tea" or "crude tea."
+
+What it is: This is the raw, unrefined green tea leaves after the initial harvest and steaming process but before any sorting, de-stemming, or polishing.
+
+Form: Whole steamed leaves, including stems and veins.
+
+Use: Aracha is like the bulk green tea leaf material that can be further processed into various types of teas including tencha and sencha.
+
+2. Tencha (碾茶)
+Meaning: "Stone ground tea" (though actually it refers to the type of leaf and processing before grinding).
+
+What it is: Tencha is made by taking aracha and removing stems and veins (de-stemming and de-veining), then drying the leaves flat without rolling or shaping them.
+
+Form: Flattened, de-stemmed, de-veined tea leaves.
+
+Use: This is the specific type of leaf used exclusively to make matcha powder. It is not rolled or twisted like sencha leaves; it's flat and easy to grind finely.
+
+3. Matcha (抹茶)
+Meaning: "Powdered tea."
+
+What it is: Matcha is the finely ground powder made from tencha leaves.
+
+Form: Bright green fine powder.
+
+Use: Whisked in hot water to make the traditional tea, used in tea ceremonies, and in modern culinary applications.
+
+
+
+**2024 PDF TOB**
+令和6年度 京都府産茶の生産・流通状況等に関する資料 （旧 京都府茶業統計）| Materials on the production and distribution status of tea produced in Kyoto Prefecture in fiscal year 2024
+(formerly Kyoto Prefecture Tea Industry Statistics)
+
+（１）総括表 | (1) Summary Table 
+
+（２）茶園面積 | ( 2 )Tea Plantation Area
+  ア 成木園面積 | A Area of Mature plantation 
+  イ 未成木園面積 | B Are of Unmature plantation 
+  ウ 栽培面積 | C Cultivated area
+  エ その他 | D Other
+  オ 茶園面積 | E Total Tea Plantation Area
+  カ 新植園面積 | F New plantation area
+  キ 優良品種別栽培面積 | G Cultivated area by Superior Variety
+
+（３）摘採面積及び生葉生産量 | Plucked area and fresh leaf production
+  ア 摘採面積 | A Area Harvested (Plucked Area)
+  イ 生葉生産量 | B Fresh leaf production volume
+
+（４）荒茶生産量及び生産金額 | Aracha Production Volume and Production Area
+  ア 荒茶生産量 | Aracha Production Volume
+  イ 荒茶生産金額 | Aracha Production Value
+  ウ 茶期別荒茶生産量及び生産金額 | Aracha Production Volume and Value by Tea Harvesting Season
+  
+（５）経営面積別生産農家戸数 | Number of Tea Farms by Management Size
+
+（６）製茶工場数 | Number of Tea Processing Factories
+  ア もみ茶・てん茶工場数 | Number of Tencha and Momi-cha Factories
+  イ ＦＡ工場数 | Number of FA (Fully Automated) Factories
+
+（７）被覆資材別茶園面積 | Tea Plantation Area by Type of Covering Material
+
+（８）地形別茶園面積 | Tea Plantation Area by Topography
+
+（９）樹齢別茶園面積 | Tea Plantation Area by Tree Age
+
+（１０）茶園施設設置状況 | Installation Status of Tea Plantation Facilities
+
+
+**2024 Summary (Part 1) Translation**
+
+______________________________________________________________________________________________________________
+///// 茶 園 面 積
+///// — Tea Garden Area (Tea Plantation Area)
+
+在 来 種 茶 園
+— Native Variety Tea Gardens
+
+優 良 品 種 茶 園
+— Superior Variety Tea Gardens
+______________________________________________________________________________________________________________
+
+優 良 品 種 茶 園 率 (%)
+— Percentage of Superior Variety Tea Gardens (%)
+______________________________________________________________________________________________________________
+
+畦 畔 茶 園
+— Ridge and Bank Tea Gardens
+
+煎 茶 園
+— Sencha Gardens
+
+か ぶ せ 茶 園
+— Kabusecha Gardens
+
+玉 露 園
+— Gyokuro Gardens
+
+///// て ん 茶 園
+///// — Tencha Gardens
+
+未 成 木 園
+— Immature Tree Gardens
+
+２ ・ ３ 年 生 茶 園
+— 2-3 Year-old Tea Gardens
+
+新 規 造 成
+— Newly Established
+
+改 植 茶 園
+— Replanted Tea Gardens
+
+荒 廃 茶 園
+— Abandoned Tea Gardens
+______________________________________________________________________________________________________________
+
+///// 栽 培 農 家 数
+/////— Number of Cultivating Farmers
+
+///// 経 営 農 家 数
+///// — Number of Operating Farmers
+
+畦 畔 茶 園 農 家 数 ※
+— Number of Farmers with Ridge/Bank Tea Gardens (*)
+
+平 均 経 営 面 積
+— Average Operating Area
+
+
+
+Page 2:
+
+区 　 分
+— Classification / Category
+
+///// 荒 茶 生 産 量
+///// — Aracha (rough tea) Production Volume
+
+煎 茶
+— Sencha
+
+か ぶ せ 茶
+— Kabusecha
+
+玉 露
+— Gyokuro
+
+///// て ん 茶
+///// — Tencha
+
+///// 秋 て ん 茶 *1
+///// — Autumn Tencha (*1 footnote)
+
+番 茶
+— Bancha
+
+///// 荒 茶 生 産 金 額
+///// — Aracha Production Value (monetary)
+
+煎 茶
+— Sencha
+
+か ぶ せ 茶
+— Kabusecha
+
+玉 露
+— Gyokuro
+
+///// て ん 茶
+///// — Tencha
+
+///// 秋 て ん 茶 *1
+///// — Autumn Tencha (*1 footnote)
+
+番 茶
+— Bancha
+
+製 茶 工 場 数
+— Number of Tea Processing Factories
+
+個 人 工 場
+— Individual Factories
+
+共 同 工 場
+— Cooperative Factories
+
+農 協 営
+— Agricultural Cooperative Managed
+
+被 覆 茶 園 面 積
+— Covered Tea Garden Area
+
+一 段 高 棚
+— Single-tier High Shelves
+
+二 段 高 棚
+— Two-tier High Shelves
+
+よ し ず ・ こ も
+— Reed Screens / Straw Mats (used for shading or frost protection)
+
+防 霜 フ ァ ン 設 置 面 積
+— Frost Protection Fan Installation Area
+
+
+**Example output:**
+--- Page 1 ---
+Ⅰ 令和6年度 京都府産茶の生産・流通状況等に関する資料
+（旧 京都府茶業統計）
+（１）総括表
+（２）茶園面積
+ア 成木園面積
+イ 未成木園面積
+ウ 栽培面積
+エ その他
+オ 茶園面積
+カ 新植園面積
+キ 優良品種別栽培面積
+（３）摘採面積及び生葉生産量
+ア 摘採面積
+イ 生葉生産量
+（４）荒茶生産量及び生産金額
+ア 荒茶生産量
+イ 荒茶生産金額
+ウ 茶期別荒茶生産量及び生産金額
+（５）経営面積別生産農家戸数
+（６）製茶工場数
+ア もみ茶・てん茶工場数
+イ ＦＡ工場数
+（７）被覆資材別茶園面積
+（８）地形別茶園面積
+（９）樹齢別茶園面積
+（１０）茶園施設設置状況
+
+--- Page 2 ---
+令 和 6 年 度 京 都 府 茶 生 産 状 況
+(1) 総 括 表
+区 分 令和６年度 令和５年度 前年対比
+ha ha ％
+茶 園 面 積 1,487.8 1,505.3 98.8
+在 来 種 茶 園 47.3 54.4 87.0
+優 良 品 種 茶 園 1,357.8 1,371.1 99.0
+優 良 品 種 茶 園 率 (%) 91.3 91.1 100.2
+畦 畔 茶 園 0.0 0.0 0.0
+煎 茶 園 348.1 422.4 82.4
+か ぶ せ 茶 園 206.4 206.9 99.8
+玉 露 園 228.6 225.1 101.5
+て ん 茶 園 594.0 537.3 110.6
+未 成 木 園 27.9 33.8 82.6
+２ ・ ３ 年 生 茶 園 19.6 25.6 76.2
+新 植 茶 園 8.4 8.2 102.5
+新 規 造 成 2.5 2.2 110.8
+改 植 茶 園 5.9 5.9 99.0
+荒 廃 茶 園 82.7 79.9 103.5
+戸 戸 ％
+栽 培 農 家 数 625 645 96.9
+経 営 農 家 数 625 645 96.9
+畦 畔 茶 園 農 家 数 ※ 0 0 0.0
+a a ％
+平 均 経 営 面 積 238.0 233.4 102.0
+調査は令和５年12月現在
+
+--- Page 3 ---
+区 分 令和６年度 令和５年度 前年対比
+ｔ ｔ ％
+荒 茶 生 産 量 2,492.4 2,427.2 102.7
+煎 茶 248.4 250.9 99.0
+か ぶ せ 茶 141.6 138.8 102.0
+玉 露 134.3 135.1 99.5
+て ん 茶 1,057.0 944.9 111.9
+秋 て ん 茶 *1 591.1 538.1 109.8
+番 茶 319.9 419.4 76.3
+百万円 百万円 ％
+荒 茶 生 産 金 額 8,859.0 7,169.1 123.6
+煎 茶 713.5 677.7 105.3
+か ぶ せ 茶 438.3 416.4 105.3
+玉 露 742.4 702.6 105.7
+て ん 茶 6,291.9 4,747.2 132.5
+秋 て ん 茶 *1 496.4 413.1 120.1
+番 茶 176.6 212.1 83.3
+工場 工場 ％
+製 茶 工 場 数 268 268 100.0
+個 人 工 場 217 217 100.0
+共 同 工 場 49 49 100.0
+農 協 営 2 2 100.0
+ha ha ％
+被 覆 茶 園 面 積 1206.6 1187.8 101.6
+一 段 高 棚 257.5 257.0 100.2
+二 段 高 棚 134.7 134.8 99.9
+よ し ず ・ こ も 25.6 25.6 100.0
+防 霜 フ ァ ン 設 置 面 積 542.3 539.3 100.6
+*1 平成２９年度から生産量と生産金額について「てん茶」から「秋てん茶」をわけています
+
+--- Page 4 ---
+(2) 茶園面積
+ア 成木園面積
+（単位：ha）
+在 来 種 優 良 品 種 合 計
+広域振 畦 畔
+興局名 市 町 村 名 茶 園 かぶせ て ん かぶせ て ん 畦 畔 かぶせ て ん
+煎茶園 玉露園 計 煎茶園 玉露園 計 煎茶園 玉露園 計
+茶 園 茶 園 茶 園 茶 園 茶 園 茶 園 茶 園
+京 都 市 0.3 2.7 3.0 0.3 2.7 3.0
+宇 治 市 0.3 0.6 3.0 3.8 7.7 4.4 1.5 17.4 40.6 63.9 4.7 2.1 20.4 44.4 71.6
+城 陽 市 0.3 0.3 28.9 28.9 29.2 29.2
+久世郡 久 御 山 町 2.2 2.2 2.2 2.2
+八 幡 市 14.8 14.8 14.8 14.8
+山城 京 田 辺 市 3.0 0.8 3.8 0.1 2.0 9.1 12.6 23.8 0.1 2.0 12.1 13.4 27.6
+綴喜郡 井 手 町 1.9 1.9 12.3 12.3 14.2 14.2
+宇治田原町 0.9 0.4 8.9 8.0 18.2 19.9 1.3 154.4 55.3 230.9 20.8 1.7 163.3 63.3 249.1
+木 津 川 市 0.7 0.7 25.1 82.5 0.6 27.7 135.9 25.1 82.5 0.6 28.4 136.6
+相楽郡 和 束 町 6.5 6.5 176.5 86.0 6.3 257.7 526.5 183.0 86.0 6.3 257.7 533.0
+南 山 城 村 3.1 0.5 3.6 78.0 31.5 2.4 85.9 197.8 81.1 32.0 2.4 85.9 201.4
+山 城 小 計 10.8 1.5 14.9 15.5 42.7 304.0 204.8 190.2 538.0 1237.0 314.8 206.3 205.1 553.5 1279.7
+亀 岡 市
+南丹 南 丹 市
+船井郡 京 丹 波 町 4.5 4.5 1.0 1.0 5.5 5.5
+南 丹 小 計 4.5 4.5 1.0 1.0 5.5 5.5
+綾 部 市 0.1 0.1 0.2 0.2 16.9 9.8 26.9 0.2 0.2 16.9 9.9 27.0
+中丹 福 知 山 市 1.0 4.4 5.5 10.9 1
+
+--- Page 5 ---
+イ 未成木園面積 ウ 栽培面積 エ その他 オ 茶園面積
+（単位：ha）
+優 良 品 種 内 訳 合 計
+広域振
+その他荒廃茶園
+興局名 市 町 村 名
+２・３年生茶園 本年植栽園 計 成 木 園 未成木園 合計 本 年 前 年
+京 都 市 0.3 0.3 3.0 0.3 3.3 3.3 3.3
+宇 治 市 1.7 0.3 2.0 71.6 2.0 73.6 4.2 77.8 78.9
+城 陽 市 0.4 0.1 0.5 29.2 0.5 29.7 29.7 29.7
+久世郡 久 御 山 町 2.2 2.2 2.2 2.2
+八 幡 市 0.4 0.4 14.8 0.4 15.2 15.2 15.7
+山城 京 田 辺 市 0.9 0.2 1.1 27.6 1.1 28.7 1.9 30.6 30.0
+綴喜郡 井 手 町 14.2 14.2 14.2 14.2
+宇治田原町 5.0 2.1 7.1 249.1 7.1 256.2 6.7 262.9 261.1
+木 津 川 市 1.7 0.3 1.9 136.6 1.9 138.5 5.1 143.6 143.8
+相楽郡 和 束 町 6.0 2.0 8.0 533.0 8.0 541.0 7.1 548.1 549.6
+南 山 城 村 1.6 1.3 2.9 201.4 2.9 204.3 52.9 257.2 276.1
+山 城 小 計 17.7 6.3 24.0 1279.7 24.0 1303.6 77.9 1381.5 1401.3
+亀 岡 市
+南丹 南 丹 市 4.8 4.8
+船井郡 京 丹 波 町 5.5 5.5 5.5 5.5
+南 丹 小 計 5.5 5.5 4.8 10.3 5.5
+綾 部 市 0.3 1.6 1.9 27.0 1.9 28.9 28.9 28.5
+中丹 福 知 山 市 0.8 0.1 0.9 10.9 0.9 11.8 11.8 11.7
+舞 鶴 市 0.5 0.3 0.9 10.3 0.9 11.2 11.2 11.0
+中 丹 小 計 1.6 2.1 3.7 48.3 3.7 51.9 51.9 51.2
+丹後 京 丹 後 市 40.7 40.7 40.7 44.1
+合 計 19.6 8.4 27.9 1377.2 27.9 1405.1 82.7 1487.8 1505.3
+前 年 2

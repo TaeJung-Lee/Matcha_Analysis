@@ -12,9 +12,11 @@ os.makedirs(output_dir, exist_ok=True)
 
 all_data = []
 
+
 for filename in os.listdir(pdf_folder):
     if not filename.endswith(".pdf"):
         continue
+    
 
     year_match = re.search(r"(\d{4})", filename)
     if not year_match:
@@ -38,13 +40,31 @@ for filename in os.listdir(pdf_folder):
         "total_aracha_yen_m": None,
         "tencha_yen_m": None,
         "autumn_tencha_yen_m": 0.0,
-        "total_tencha_yen_m": None
+        "total_tencha_yen_m": None,
+
+        #Realized I want the other aracha values too
+        "sencha_field_ha": None,
+        "kabusecha_field_ha": None,
+        "gyokuro_field_ha": None,
+        "bancha_field_ha": None,
+
+        "sencha_tons": None,
+        "kabusecha_tons": None,
+        "gyokuro_tons": None,
+        "bancha_tons": None,
+
+        "sencha_yen_m": None,
+        "kabusecha_yen_m": None,
+        "gyokuro_yen_m": None,
+        "bancha_yen_m": None
+
     }
 
     try:
         with pdfplumber.open(pdf_path) as pdf:
             for page in pdf.pages:
                 text = page.extract_text()
+                
 
                 match_total_field = re.search(r"\n茶\s*園\s*面\s*積\s+([\d,]+\.\d+)", text)
                 if match_total_field:
@@ -85,6 +105,93 @@ for filename in os.listdir(pdf_folder):
                 match_autumn_tencha_yen = re.search(r"荒\s*茶\s*生\s*産\s*金\s*額[^\n]+?\n.*?秋\s*て\s*ん\s*茶\s*\*1\s*([\d,]+\.\d+)", text, re.DOTALL)
                 if match_autumn_tencha_yen:
                     row["autumn_tencha_yen_m"] = float(match_autumn_tencha_yen.group(1).replace(",", ""))
+
+                # --- Tea type fields (area in ha) ---
+                match_sencha_field = re.search(r"煎\s*茶\s*園\s+([\d,]+\.\d+)", text)
+                if match_sencha_field:
+                    row["sencha_field_ha"] = float(match_sencha_field.group(1).replace(",", ""))
+
+                match_kabuse_field = re.search(r"か\s*ぶ\s*せ\s*茶\s*園\s+([\d,]+\.\d+)", text)
+                if match_kabuse_field:
+                    row["kabusecha_field_ha"] = float(match_kabuse_field.group(1).replace(",", ""))
+
+                match_gyokuro_field = re.search(r"玉\s*露\s*園\s+([\d,]+\.\d+)", text)
+                if match_gyokuro_field:
+                    row["gyokuro_field_ha"] = float(match_gyokuro_field.group(1).replace(",", ""))
+
+                match_bancha_field = re.search(r"番\s*茶\s*園\s+([\d,]+\.\d+)", text)
+                if match_bancha_field:
+                    row["bancha_field_ha"] = float(match_bancha_field.group(1).replace(",", ""))
+
+                # --- Production volume (tons) ---
+                match_sencha_tons = re.search(r"煎\s*茶\s*([\d,]+\.\d+)", text)
+                if match_sencha_tons:
+                    row["sencha_tons"] = float(match_sencha_tons.group(1).replace(",", ""))
+
+                match_kabusecha_tons = re.search(r"か\s*ぶ\s*せ\s*茶\s*([\d,]+\.\d+)", text)
+                if match_kabusecha_tons:
+                    row["kabusecha_tons"] = float(match_kabusecha_tons.group(1).replace(",", ""))
+
+                match_gyokuro_tons = re.search(r"玉\s*露\s*([\d,]+\.\d+)", text)
+                if match_gyokuro_tons:
+                    row["gyokuro_tons"] = float(match_gyokuro_tons.group(1).replace(",", ""))
+
+                match_bancha_tons = re.search(r"番\s*茶\s*([\d,]+\.\d+)", text)
+                if match_bancha_tons:
+                    row["bancha_tons"] = float(match_bancha_tons.group(1).replace(",", ""))
+
+                # --- Production value (yen in millions) ---
+
+                #  match_tencha = re.search(r"て\s*ん\s*茶\s*([\d,]+\.\d+)", text)
+                #  if match_tencha:
+                #      row["tencha_tons"] = float(match_tencha.group(1).replace(",", ""))
+                
+                #  match_tencha_yen = re.search(r"荒\s*茶\s*生\s*産\s*金\s*額[^\n]+?\n.*?て\s*ん\s*茶\s*([\d,]+\.\d+)", text, re.DOTALL)
+                #  if match_tencha_yen:
+                #      row["tencha_yen_m"] = float(match_tencha_yen.group(1).replace(",", ""))
+
+                #Not working, displays tons
+                # Match Sencha Yen
+                # First, narrow down to the yen section to avoid picking up earlier entries
+                # Sencha
+                match_sencha_yen = re.search(
+                    r"荒\s*茶\s*生\s*産\s*金\s*額[^\n]+?\n.*?煎\s*茶\s*([\d,]+\.\d+)",
+                    text,
+                    re.DOTALL
+                )
+                if match_sencha_yen:
+                    row["sencha_yen_m"] = float(match_sencha_yen.group(1).replace(",", ""))
+
+                # Kabusecha
+                match_kabusecha_yen = re.search(
+                    r"荒\s*茶\s*生\s*産\s*金\s*額[^\n]+?\n.*?か\s*ぶ\s*せ\s*茶\s*([\d,]+\.\d+)",
+                    text,
+                    re.DOTALL
+                )
+                if match_kabusecha_yen:
+                    row["kabusecha_yen_m"] = float(match_kabusecha_yen.group(1).replace(",", ""))
+
+                # Gyokuro
+                match_gyokuro_yen = re.search(
+                    r"荒\s*茶\s*生\s*産\s*金\s*額[^\n]+?\n.*?玉\s*露\s*([\d,]+\.\d+)",
+                    text,
+                    re.DOTALL
+                )
+                if match_gyokuro_yen:
+                    row["gyokuro_yen_m"] = float(match_gyokuro_yen.group(1).replace(",", ""))
+
+                # Bancha
+                match_bancha_yen = re.search(
+                    r"荒\s*茶\s*生\s*産\s*金\s*額[^\n]+?\n.*?番\s*茶\s*([\d,]+\.\d+)",
+                    text,
+                    re.DOTALL
+                )
+                if match_bancha_yen:
+                    row["bancha_yen_m"] = float(match_bancha_yen.group(1).replace(",", ""))
+
+
+
+
 
         # --- Post-processing calculations ---
         row["total_tencha_tons"] = (row["tencha_tons"] or 0) + (row["autumn_tencha_tons"] or 0)
