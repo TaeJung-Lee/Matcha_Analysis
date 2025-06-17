@@ -131,7 +131,7 @@ There is a wide gap between Matcha supply and demand, raising **important questi
 
 This study reveals that matcha demand not only in the U.S. but also Worldwide has surged exponentially since 2020, but pricing and agricultural supply have not scaled at the same pace. Matcha prices remain relatively flat, constrained by Japan’s deflationary pricing culture and limited production of Matcha.
 
-With mMtcha demand projected to continue growing strongly through 2030, this widening gap between supply and demand raises key questions for future pricing strategies, agricultural planning, and the sustainable future of Japan’s matcha industry.
+With Matcha demand projected to continue growing strongly through 2030, this widening gap between supply and demand raises key questions for future pricing strategies, agricultural planning, and the sustainable future of Japan’s matcha industry.
 
 ### Recommendations: ###
 
