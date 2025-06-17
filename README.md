@@ -63,15 +63,18 @@ Google Index data past 12/2024 (from 01/2025 - 05/2025) was used for better data
 We made sure that our calculated 01/2025-05/2025 values were reasonable:
 
 <img width="636" alt="Screenshot 2025-06-16 at 6 44 05 PM" src="https://github.com/user-attachments/assets/e231eb7c-62bb-4526-ae9b-42a8dcbbb773" />
+
 R^2 value of .96 is very high and indicates that the vairables in our model does a great job of explaining the changes observed in the dependent variable 
 
 <img width="635" alt="Screenshot 2025-06-16 at 6 44 20 PM" src="https://github.com/user-attachments/assets/49ea658e-edf6-4d50-89ea-4e419a901f39" />
+
 Some of the actual observed values and predicted values by the regression model
 > Codepath: Matcha_Analysis/scripts/LinearRegression.py
 
 Using our 2003-2024 index values coupled with our 2025 calculated values, we were able to generate a Matcha trend forecast all the way up to 2030. 
 
 <img width="1495" alt="Screenshot 2025-06-16 at 6 30 31 PM" src="https://github.com/user-attachments/assets/04fb6bd6-d18a-4d77-9a0a-b20f2e48c119" />
+
 > Codepath: Matcha_Analysis/scripts/forecast.py
 
 ***Key Point 1:***
@@ -83,6 +86,7 @@ This leads us to some questions:
 Using our government data from Uji, we got the Value of Matcha ¥/lbs (= Tencha/Matcha Product Value ¥ / Tencha/Matcha Production Volume in Tons * 2000 lbs/Tons). We compared that with Google Matcha Trend 1-100 index for the U.S., Japan, and Worldwide during 2004-2024. Because our government data only releases by year, the average of 12 months for every year was used for Google Trend's index to keep time consistency. 
 
 <img width="650" alt="image" src="https://github.com/user-attachments/assets/0079f2a8-72c6-416e-877f-514b7e2d5579" />
+
 > Tableau Interactive Link: https://public.tableau.com/views/MatchaAnalysis/Dashboard2?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
 ***Key Point 2:***
@@ -101,6 +105,7 @@ This leads us to the next question, **if Japan does not raise matcha's price des
 A common assumption is that Uji, Japan likely expanded land for Aracha production to increase Tencha/Matcha output; however, that is not the case.
 
 ![Screenshot 2025-06-16 at 6 13 15 PM](https://github.com/user-attachments/assets/46cc3bf8-4a73-49ac-bca4-dca0cc302866)
+
 > Tableau Interactive Link: https://public.tableau.com/views/MatchaAnalysis/Dashboard3?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
 Key Point 3:
@@ -109,7 +114,9 @@ Aracha production has remained relatively flat, with other green tea outputs red
 Once again, Aracha is used to make into Tencha/Matcha, Sencha, Kabusecha, Gyokuto, or Bancha (Only Tencha/Matcha is surging in demand). From our 2003-2024 Kyoto Prefecture Public Relations Data, **land HAS NOT expanded**, instead, **the total amount of land for all Green Teas has been the same**. In order to meet growing demand of Matcha, **Sencha has been increasingly cut in production to convert more of the Aracha into Matcha**. 
 
 ![image](https://github.com/user-attachments/assets/6b30db89-738e-4d62-a745-26f645d1b1ff)
+
 > Tableau Interactive Link: https://public.tableau.com/views/MatchaAnalysis/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+> 
 > Tableau Interactive Link 2: https://public.tableau.com/views/MatchaAnalysis/Sheet12?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
 ***Why hasn’t more land been allocated for matcha production?***
