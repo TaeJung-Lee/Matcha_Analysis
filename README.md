@@ -34,7 +34,8 @@ In order to evaluate matcha supply performance, we focused on the following metr
 
 Example of pulling for how much field in hectares is reserved for Tencha/Matcha:
 
-(ENTER IMAGE OF matcha_2024 page 3)
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/7c57acb4-e39e-4e41-9115-55a349087e2f" />
+
 > Filepath: Matcha_Analysis/data/raw_pdfs or Kyoto Prefecture Public Relations website
 
 ```
