@@ -19,9 +19,8 @@ Using Python, SQL, and Tableau, data from the official "Kyoto Prefecture Public 
 
 1. U.S. interest in matcha has grown over 4x since 2020, with projections indicating potential 10x growth by 2030
 2. Matcha prices have remained relatively flat despite surging global popularity
-3. There is a wide gap between Matcha supply and demand, raising **important questions for pricing strategy and agricultural planning**
-4. Aracha production has remained relatively flat, with **other green tea outputs reduced to prioritize Matcha production**
-3. **Forecasted model** using SARIMA to project continued upward growth in matcha-related searches through 2030
+3. Aracha production has remained relatively flat, with **other green tea outputs reduced to prioritize Matcha production**
+4. There is a wide gap between Matcha supply and demand, raising **important questions for pricing strategy and agricultural planning**
 
 ---
 
