@@ -37,11 +37,11 @@ Example of pulling for how much field in hectares is reserved for Tencha/Matcha:
 (ENTER IMAGE OF matcha_2024 page 3)
 > Filepath: Matcha_Analysis/data/raw_pdfs or Kyoto Prefecture Public Relations website
 
-'''
+```
 match_tencha_field = re.search(r"て\s*ん\s*茶\s*園\s*([\d,]+\.\d+)", text)
                 if match_tencha_field:
                     row["tencha_field_ha"] = float(match_tencha_field.group(1).replace(",", ""))
-'''
+```
 > Codepath: Matcha_Analysis/scripts/extract_data.py
 
 ## Using Addtional Data from Google Trends
