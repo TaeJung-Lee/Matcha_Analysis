@@ -1,5 +1,26 @@
 -- in terminal type:
--- sqlite3 matcha_project.db
+
+
+       -- cd into cleansed_csv
+       -- sqlite3 matcha_project.db
+
+       -- example: 
+       -- sqlite> .mode csv
+       -- sqlite> .import uji_matcha_extracted.csv uji_matcha
+       -- sqlite> .headers on
+       -- sqlite> .mode csv
+       -- sqlite> .output sorted_matcha.csv
+       -- sqlite> SELECT * FROM uji_matcha ORDER BY year DESC;
+       -- sqlite> .output stdout
+
+       -- .read sql/create_tables.sql
+       -- .mode csv
+       -- .separator ,
+       -- .import data/uji_matcha_extracted.csv uji_matcha
+       -- SELECT * FROM uji_matcha LIMIT 5;
+
+       
+
 
 -- .exit to exit
 

@@ -5,7 +5,7 @@ import os
 
 print("Starting updated PDF extraction...")
 
-# --- Setup ---
+
 pdf_folder = os.path.join("..", "data", "raw_pdfs")
 output_dir = os.path.join("..", "data", "cleaned_csv")
 os.makedirs(output_dir, exist_ok=True)
@@ -65,7 +65,6 @@ for filename in os.listdir(pdf_folder):
             for page in pdf.pages:
                 text = page.extract_text()
                 
-
                 match_total_field = re.search(r"\n茶\s*園\s*面\s*積\s+([\d,]+\.\d+)", text)
                 if match_total_field:
                     row["total_field_ha"] = float(match_total_field.group(1).replace(",", ""))
@@ -106,7 +105,7 @@ for filename in os.listdir(pdf_folder):
                 if match_autumn_tencha_yen:
                     row["autumn_tencha_yen_m"] = float(match_autumn_tencha_yen.group(1).replace(",", ""))
 
-                # --- Tea type fields (area in ha) ---
+                # Tea type fields
                 match_sencha_field = re.search(r"煎\s*茶\s*園\s+([\d,]+\.\d+)", text)
                 if match_sencha_field:
                     row["sencha_field_ha"] = float(match_sencha_field.group(1).replace(",", ""))
@@ -123,7 +122,7 @@ for filename in os.listdir(pdf_folder):
                 if match_bancha_field:
                     row["bancha_field_ha"] = float(match_bancha_field.group(1).replace(",", ""))
 
-                # --- Production volume (tons) ---
+                # Production volume in tons
                 match_sencha_tons = re.search(r"煎\s*茶\s*([\d,]+\.\d+)", text)
                 if match_sencha_tons:
                     row["sencha_tons"] = float(match_sencha_tons.group(1).replace(",", ""))
@@ -193,7 +192,7 @@ for filename in os.listdir(pdf_folder):
 
 
 
-        # --- Post-processing calculations ---
+        # Post calculations
         row["total_tencha_tons"] = (row["tencha_tons"] or 0) + (row["autumn_tencha_tons"] or 0)
         row["total_tencha_yen_m"] = (row["tencha_yen_m"] or 0) + (row["autumn_tencha_yen_m"] or 0)
 
@@ -202,7 +201,7 @@ for filename in os.listdir(pdf_folder):
     except Exception as e:
         print(f"Error processing {filename}: {e}")
 
-# --- Save combined dataset ---
+#Save
 df = pd.DataFrame(all_data)
 print(df)
 

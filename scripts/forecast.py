@@ -2,7 +2,7 @@ import pandas as pd
 from statsmodels.tsa.statespace.sarimax import SARIMAX
 
 
-#Months of US Google Trend Search Index
+#months of US Google Trend Search Index
 months = [
     "2004-01", "2004-02", "2004-03", "2004-04", "2004-05", "2004-06", "2004-07", "2004-08", "2004-09", "2004-10", "2004-11", "2004-12", 
     "2005-01", "2005-02", "2005-03", "2005-04", "2005-05", "2005-06", "2005-07", "2005-08", "2005-09", "2005-10", "2005-11", "2005-12", 
@@ -26,12 +26,11 @@ months = [
     "2023-01", "2023-02", "2023-03", "2023-04", "2023-05", "2023-06", "2023-07", "2023-08", "2023-09", "2023-10", "2023-11", "2023-12",
     "2024-01", "2024-02", "2024-03", "2024-04", "2024-05", "2024-06", "2024-07", "2024-08", "2024-09", "2024-10", "2024-11", "2024-12",
     
-    
-    #"2025-01", "2025-02", "2025-03", "2025-04", "2025-05"
+    "2025-01", "2025-02", "2025-03", "2025-04", "2025-05"
 ]
 
 
-#Values of US Google Trend Search Index
+#values of US Google Trend Search Index
 values = [
     1,0,0,1,1,0,1,1,0,0,0,1,2,1,1,1,1,2,1,1,1,1,1,2,1,1,1,2,1,2,2,2,1,1,2,2,2,2,2,2,2,3,2,2,2,2,2,2,
     3,2,3,2,2,3,3,4,3,2,2,3,3,3,3,3,3,3,3,3,3,3,3,2,3,3,3,3,3,4,3,3,3,3,3,4,5,5,5,4,4,3,5,4,4,3,4,4,
@@ -41,57 +40,58 @@ values = [
     45,41,45,59,62,68,60,57,55,55,53,49,46,44,46,62,65,66,71,65,66,69,70,60,57,50,56,69,77,85,84,79,
     79,81,84,73,67,63,67,75,77,100,97,96,94,99,97,96,85,90,100,
 
-    #131.13, 140.93, 186.01, 182.09, 197.77
+    131.13, 140.93, 186.01, 182.09, 197.77
 ]
 
 
-#Convert to DataFrame
+#convert to DataFrame
 df = pd.DataFrame({"Month": pd.to_datetime(months), "Matcha_Index": values})
 df.set_index("Month", inplace=True)
 
-#Fit SARIMA model 
+#SARIMA model 
 model = SARIMAX(df, order=(1, 1, 1), seasonal_order=(1, 1, 1, 12))
 results = model.fit(disp=False)
 
-#Forecasting to 2030
+#forecasting to 2030
 future_steps = (2030 - 2024) * 12 
 forecast = results.get_forecast(steps = future_steps)
 forecast_df = forecast.summary_frame()
 
-#Keeping only forecasted values
+#keep only the forecasted values
 forecast_data = forecast_df[['mean']]
 forecast_data = forecast_data.rename(columns={'mean': 'Forecasted_Matcha_Index'})
 
 #Reset index for CSV or table
 forecast_data = forecast_data.reset_index()
 forecast_data.columns = ['Month', 'Forecasted_Matcha_Index']
-#Format Month AS YYYY‑MM
+#YYYY‑MM
 forecast_data['Month'] = forecast_data['Month'].dt.strftime('%Y-%m')
 
-#Save to CSV
-forecast_data.to_csv("matcha_forecast_2025_2030.csv", index = False)
 
-#Show result
-print(forecast_data.head(12))  # Print first year of forecast (2025)
+
+
+
+forecast_data.to_csv("matcha_forecast_2025_2030.csv", index = False)
+print(forecast_data.head(12))  #print first year of forecast 2025
 
 
 
 
 import matplotlib.pyplot as plt
 
-# Plot historical + forecasted matcha index
+#plot historical + forecasted matcha index
 plt.figure(figsize=(15, 6))
 
-# Historical data
+#historical data
 plt.plot(df.index, df["Matcha_Index"], label="Historical Matcha Index", color="green")
 
-# Forecasted data
+#forecasted data
 forecast_data_plot = forecast_data.copy()
 forecast_data_plot["Month"] = pd.to_datetime(forecast_data_plot["Month"])
 plt.plot(forecast_data_plot["Month"], forecast_data_plot["Forecasted_Matcha_Index"], 
          label="Forecasted Matcha Index", color="orange", linestyle='--')
 
-# Titles and labels
+#titles & labels
 plt.title("US Google Search Index for Matcha: 2004–2030", fontsize=16)
 plt.xlabel("Date")
 plt.ylabel("Search Index (0–100 scale)")
@@ -99,7 +99,7 @@ plt.legend()
 plt.grid(True)
 plt.tight_layout()
 
-# Show the plot
+
 plt.show()
 
 
