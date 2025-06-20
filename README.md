@@ -60,6 +60,10 @@ Kyoto Prefecture Public Relations only has **YEARLY** data from 2003 - 2024. Thu
 
 Google Index data past 12/2024 (from 01/2025 - 05/2025) was used for better data modeling using SARIMA. But first, we needed to convert the 2025 data past the 100 index mark relative to our base indexes as accurately as possible: 
 
+![Screenshot 2025-06-20 at 2 36 28 PM](https://github.com/user-attachments/assets/35a7e59f-5f10-41bc-a16f-08e7ebc84f3e)
+
+> Codepath: Matcha_Analysis/scripts/LinearRegression.py
+
 ![image](https://github.com/user-attachments/assets/41a8ba55-9054-4088-931a-2c2d6ebcd664)
 
 > Codepath: Matcha_Analysis/scripts/forecast.py
