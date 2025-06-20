@@ -60,36 +60,17 @@ Kyoto Prefecture Public Relations only has **YEARLY** data from 2003 - 2024. Thu
 
 Google Index data past 12/2024 (from 01/2025 - 05/2025) was used for better data modeling using SARIMA. But first, we needed to convert the 2025 data past the 100 index mark relative to our base indexes as accurately as possible: 
 
-![image](https://github.com/user-attachments/assets/54e7a713-a968-4d6a-856c-f7e2175d7aa7) 
-
-We made sure that our calculated 01/2025-05/2025 values were reasonable:
-
-<img width="636" alt="Screenshot 2025-06-16 at 6 44 05 PM" src="https://github.com/user-attachments/assets/e231eb7c-62bb-4526-ae9b-42a8dcbbb773" />
-
-R^2 value of .96 is very high and indicates that the vairables in our model does a great job of explaining the changes observed in the dependent variable 
-
-<img width="635" alt="Screenshot 2025-06-16 at 6 44 20 PM" src="https://github.com/user-attachments/assets/49ea658e-edf6-4d50-89ea-4e419a901f39" />
-
-Some of the actual observed values and predicted values by the regression model
-> Codepath: Matcha_Analysis/scripts/LinearRegression.py
-
-Using our 2003-2024 index values coupled with our 2025 calculated values, we were able to generate a Matcha trend forecast all the way up to 2030. 
-
-<img width="1495" alt="Screenshot 2025-06-16 at 6 30 31 PM" src="https://github.com/user-attachments/assets/04fb6bd6-d18a-4d77-9a0a-b20f2e48c119" />
+![image](https://github.com/user-attachments/assets/41a8ba55-9054-4088-931a-2c2d6ebcd664)
 
 > Codepath: Matcha_Analysis/scripts/forecast.py
 
-***Key Point 1:***
-U.S. interest in matcha has grown over 4x since 2020, with projections indicating potential 10x growth by 2030
-
-This leads us to some questions:
 ### Deeper dive into matcha Price and Demand
 
 Using our government data from Uji, we got the Value of Matcha ¥/lbs (= Tencha/Matcha Product Value ¥ / Tencha/Matcha Production Volume in Tons * 2000 lbs/Tons). We compared that with Google Matcha Trend 1-100 index for the U.S., Japan, and Worldwide during 2004-2024. Because our government data only releases by year, the average of 12 months for every year was used for Google Trend's index to keep time consistency. 
 
 <img width="650" alt="image" src="https://github.com/user-attachments/assets/0079f2a8-72c6-416e-877f-514b7e2d5579" />
 
-> Tableau Interactive Link: https://public.tableau.com/views/MatchaAnalysis/Dashboard2?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+> Tableau Interactive Link: [https://public.tableau.com/views/MatchaAnalysis/Dashboard2?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link](https://public.tableau.com/views/MatchaAnalysis/Dashboard2?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ***Key Point 2:***
 Matcha popularity is increasing exponentially, while the estimated value of Matcha has not changed much. The estimated value had been slowly decreasing until 2020, and is now slowly increasing. 
