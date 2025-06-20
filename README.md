@@ -98,7 +98,7 @@ After we have our new calculated/predicted values 01/2025 - 05/2025, we use thes
 
 Using our government data from Uji, we got the Value of Matcha ¥/lbs (= Tencha/Matcha Product Value ¥ / Tencha/Matcha Production Volume in Tons * 2000 lbs/Tons). We compared that with Google Matcha Trend 1-100 index for the U.S., Japan, and Worldwide during 2004-2024. Because our government data only releases by year, the average of 12 months for every year was used for Google Trend's index to keep time consistency. 
 
-![image](https://github.com/user-attachments/assets/3b1e84ef-7dd3-440a-9e55-dc910bf055a6)
+![image](https://github.com/user-attachments/assets/8e6e669b-7196-41de-b98e-d1f3c5819907)
 
 > Tableau Interactive Link: [https://public.tableau.com/views/MatchaAnalysis/Dashboard2?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link](https://public.tableau.com/views/MatchaAnalysis/Dashboard2?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
