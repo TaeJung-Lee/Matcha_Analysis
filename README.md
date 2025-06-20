@@ -64,6 +64,8 @@ Google Index data past 12/2024 (from 01/2025 - 05/2025) was used for better data
 
 > Codepath: Matcha_Analysis/scripts/LinearRegression.py
 
+After we have our new calculated/predicted values 01/2025 - 05/2025, we use these up-to-date values to generate a Matcha trend forecast all the way up to 2030:
+
 ![image](https://github.com/user-attachments/assets/41a8ba55-9054-4088-931a-2c2d6ebcd664)
 
 > Codepath: Matcha_Analysis/scripts/forecast.py
@@ -72,43 +74,25 @@ Google Index data past 12/2024 (from 01/2025 - 05/2025) was used for better data
 
 Using our government data from Uji, we got the Value of Matcha ¥/lbs (= Tencha/Matcha Product Value ¥ / Tencha/Matcha Production Volume in Tons * 2000 lbs/Tons). We compared that with Google Matcha Trend 1-100 index for the U.S., Japan, and Worldwide during 2004-2024. Because our government data only releases by year, the average of 12 months for every year was used for Google Trend's index to keep time consistency. 
 
-<img width="650" alt="image" src="https://github.com/user-attachments/assets/0079f2a8-72c6-416e-877f-514b7e2d5579" />
+![image](https://github.com/user-attachments/assets/3b1e84ef-7dd3-440a-9e55-dc910bf055a6)
 
 > Tableau Interactive Link: [https://public.tableau.com/views/MatchaAnalysis/Dashboard2?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link](https://public.tableau.com/views/MatchaAnalysis/Dashboard2?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
-
-***Key Point 2:***
-Matcha popularity is increasing exponentially, while the estimated value of Matcha has not changed much. The estimated value had been slowly decreasing until 2020, and is now slowly increasing. 
-
-***Why has matcha prices not risen despite its popularity?***
-
-Unlike most countries that have seen prices steadily rise due to inflation, Japan has not experienced major price increases since the 1990s. From the cost of tuna sashimi to real estate to people's salary, Japan's prices rarely increase. This is due to Japanese culture where companies and consumers alike share a deflationary mindset that makes raising prices socially unacceptable.
-
-However, according to our data, **Matcha's popularity has outpaced the current value of matcha since 2018-2020.**
 
 This leads us to the next question, **if Japan does not raise matcha's price despite its surging popularity**, **what have they done in Supply to meet Demand?**
 
 ## Deeper dive into Supply due to Surging Demand
 
-A common assumption is that Uji, Japan likely expanded land for Aracha production to increase Tencha/Matcha output; however, that is not the case.
+***A common assumption is that Uji, Japan likely expanded land for Aracha production to increase Tencha/Matcha output; however, that is not the case.***
 
-![Screenshot 2025-06-16 at 6 13 15 PM](https://github.com/user-attachments/assets/46cc3bf8-4a73-49ac-bca4-dca0cc302866)
+![image](https://github.com/user-attachments/assets/534d0b62-182e-4b8d-90fa-6dddd9095d6c)
 
 > Tableau Interactive Link: https://public.tableau.com/views/MatchaAnalysis/Dashboard3?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
-Key Point 3:
-Aracha production has remained relatively flat, with other green tea outputs reduced to prioritize Matcha production
-
-Once again, Aracha is used to make into Tencha/Matcha, Sencha, Kabusecha, Gyokuto, or Bancha (Only Tencha/Matcha is surging in demand). From our 2003-2024 Kyoto Prefecture Public Relations Data, **land HAS NOT expanded**, instead, **the total amount of land for all Green Teas has been the same**. In order to meet growing demand of Matcha, **Sencha has been increasingly cut in production to convert more of the Aracha into Matcha**. 
-
-![image](https://github.com/user-attachments/assets/6b30db89-738e-4d62-a745-26f645d1b1ff)
+![image](https://github.com/user-attachments/assets/fb46a59a-7362-44ee-8489-ad9c64ea7736)
 
 > Tableau Interactive Link: https://public.tableau.com/views/MatchaAnalysis/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 > 
 > Tableau Interactive Link 2: https://public.tableau.com/views/MatchaAnalysis/Sheet12?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
-
-***Why hasn’t more land been allocated for matcha production?***
-
-Expanding land for matcha production faces challenges due to its artisan labor intensive and delicate processing to maintain high quality. Space constraints in key regions like Uji and the need to preserve environmental conditions further limit expansion, as not all land is suitable for high grade matcha cultivation. As a result, farmers may focus on improving yield and quality on existing land rather than expanding into less ideal areas.
 
 
 ## Conclusion & Recommendations
