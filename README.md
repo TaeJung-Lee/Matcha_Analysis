@@ -40,6 +40,30 @@ Example of pulling for how much field in hectares is reserved for Tencha/Matcha:
 >
 > Kyoto Prefecture Public Relations website: https://www.pref.kyoto.jp/nosan/chagyotokei.html
 
+Example Output of PDF Read Result:
+```
+[Page 3]
+区 分 令和６年度 令和５年度 前年対比
+ｔ ｔ ％
+荒 茶 生 産 量 2,492.4 2,427.2 102.7
+煎 茶 248.4 250.9 99.0
+か ぶ せ 茶 141.6 138.8 102.0
+玉 露 134.3 135.1 99.5
+て ん 茶 1,057.0 944.9 111.9
+秋 て ん 茶 *1 591.1 538.1 109.8
+番 茶 319.9 419.4 76.3
+百万円 百万円 ％
+荒 茶 生 産 金 額 8,859.0 7,169.1 123.6
+煎 茶 713.5 677.7 105.3
+か ぶ せ 茶 438.3 416.4 105.3
+玉 露 742.4 702.6 105.7
+て ん 茶 6,291.9 4,747.2 132.5
+秋 て ん 茶 *1 496.4 413.1 120.1
+番 茶 176.6 212.1 83.3
+工場 工場 ％
+```
+
+Code to Extract Data from Output:
 ```
 match_tencha_field = re.search(r"て\s*ん\s*茶\s*園\s*([\d,]+\.\d+)", text)
                 if match_tencha_field:
@@ -96,20 +120,7 @@ This leads us to the next question, **if Japan does not raise matcha's price des
 
 
 ## Conclusion & Recommendations
+![image](https://github.com/user-attachments/assets/0ad2f475-a6fe-4f77-95b5-2b3d356b0a3a)
+![image](https://github.com/user-attachments/assets/9a705eb3-6140-4bc1-ac99-cb22c71f1817)
+![image](https://github.com/user-attachments/assets/e9e37b67-78b3-4509-807b-e47f7c27af6e)
 
-***Key Point 4:***
-There is a wide gap between Matcha supply and demand, raising **important questions for pricing strategy and agricultural planning**
-
-This study reveals that matcha demand not only in the U.S. but also Worldwide has surged exponentially since 2020, but pricing and agricultural supply have not scaled at the same pace. Matcha prices remain relatively flat, constrained by Japan’s deflationary pricing culture and limited production of Matcha.
-
-With Matcha demand projected to continue growing strongly through 2030, this widening gap between supply and demand raises key questions for future pricing strategies, agricultural planning, and the sustainable future of Japan’s matcha industry.
-
-### Recommendations: ###
-
-1. Encourage gradual land expansion: Invest into high grade land and processes for Aracha/Matcha cultivation, with government support for proper shading infrastructure, skilled labor training, and financial incentives.
-
-2. Raise international pricing: Create international pricing strategies to gradually adjust export pricing to better reflect demand and production costs. This could not only relieve domestic pricing pressures, but also ensure a healthier supply where global consumers don't bulk buy due to cheap costs but high popularity.
-
-3. Promote sustainability and yield improvement: Invest in agricultural innovation to improve yield and quality on existing land while maintaining Uji’s environmental and cultural heritage.
-
-These steps would help ensure that Japan’s matcha industry remains globally competitive and sustainably meets rising international demand.
