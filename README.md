@@ -14,14 +14,6 @@ Using Python, SQL, and Tableau, data from the official "Kyoto Prefecture Public 
 2. Currently in 2024/2025, the shortage of unattainable matcha refers to the matcha from Uji, Kyoto. It is possible to easily attain lower quality matcha from regions outside of Uji, Kyoto and even countries outside of Japan such as China. 
 3. The data from "Kyoto Prefecture Public Relations" on Uji, Kyoto is not only reliable, but it is powerful, showing authentic data from 2003-2024.
 
-
-## Key Insights Summary
-
-1. U.S. interest in matcha has grown over 4x since 2020, with projections indicating potential 10x growth by 2030
-2. Matcha prices have remained relatively flat despite surging global popularity
-3. Aracha production has remained relatively flat, with **other green tea outputs reduced to prioritize Matcha production**
-4. There is a wide gap between Matcha supply and demand, raising **important questions for pricing strategy and agricultural planning**
-
 ---
 
 # Overview
