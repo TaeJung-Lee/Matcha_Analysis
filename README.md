@@ -87,6 +87,7 @@ After we have our new calculated/predicted values 01/2025 - 05/2025, we use thes
 > Codepath: Matcha_Analysis/scripts/forecast.py
 
 <img width="1155" height="607" alt="image" src="https://github.com/user-attachments/assets/4bbb7ec4-b198-419b-babb-5cd7d532b230" />
+
 > Actual Graph From Google Trends, Last updated: 07/16/25 
 
 
